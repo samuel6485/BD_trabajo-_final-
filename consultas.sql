@@ -1,9 +1,6 @@
 
 -- CONSULTAS SQL SOLICITADAS
 
--- Asegúrate de usar la base de datos: USE PLATAFORMA_VIDEOJUEGOS;
-
-
 -- CONSULTA 1: Conteo de Usuarios
 -- Descripción: Contar el número total de usuarios registrados en la plataforma.
 
@@ -24,8 +21,8 @@ ORDER BY COMUNA;
 -- Descripción: Seleccionar nombre y estudio desarrollador de todos los juegos
 -- con alias personalizados.
 
-SELECT nombre AS 'Título del Juego', 
-       estudio_dev AS 'Empresa Desarrolladora' 
+SELECT nombre AS `Título del Juego`, 
+       estudio_dev AS `Empresa Desarrolladora` 
 FROM JUEGO;
 
 
@@ -54,8 +51,8 @@ ORDER BY PLATAFORMA_id;
 -- CONSULTA 6: Alias en Columnas (Equipos)
 -- Descripción: Listar nombre de equipos y sus horas de entrenamiento con alias.
 
-SELECT nombre AS 'Squad', 
-       horas AS 'Tiempo Jugado' 
+SELECT nombre AS `Squad`, 
+       horas AS `Tiempo Jugado` 
 FROM EQUIPO_JUEGO;
 
 
